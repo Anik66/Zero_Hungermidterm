@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "singup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<img src="/Models/donation-page-header-2023-new.jpg" width="100%" height="60%">
+
+<main>
+    <div class="row">
+        <section class="col-md-7" aria-labelledby="gettingStartedTitle">
+
+            <p>
+                Wellcome to our NGO,No one has ever become poor from giving
+            </p>
+
+            <div>
+                @Html.ActionLink("login as a Admin", "AdLogin","Login")
+            </div>
+
+            <div>
+                @Html.ActionLink("Singup For Employee", "Create")
+            </div>
+
+            <div>
+                @Html.ActionLink("Login as a Employee", "Emplogin", "Login")
+            </div>
+
+
+
+            <div>
+                @Html.ActionLink("Singup For Restaurant ", "Rcreate", "restaurant")
+            </div>
+
+            <div>
+                @Html.ActionLink("Login as a Restaurant ", "Restlogin", "Login")
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+    </div>

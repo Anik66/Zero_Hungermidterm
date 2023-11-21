@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Zero_Hungermidterm.EF.restaurant>
+
+@{
+    ViewBag.Title = "Reslist";
+}
+
+<h2>Reslist</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Resid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Resname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Resid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Resname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+       
+    </tr>
+}
+
+</table>
+
+<div>
+    @Html.ActionLink("DonateFood", "Create", "Collectfoods")
+</div>

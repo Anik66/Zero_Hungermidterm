@@ -1,0 +1,58 @@
+﻿@model Zero_Hungermidterm.EF.Collectfood
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Collectfood</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Request_no)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Request_no)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dish_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dish_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pick_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pick_date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
